@@ -7,7 +7,7 @@
 
 export function Try( lambda: Function, handler: Function ): any {
     try {
-        return lambda.apply
+        return lambda.apply()
     } 
     catch (e) {
         handler.apply(e)
